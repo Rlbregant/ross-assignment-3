@@ -21,7 +21,6 @@ public class App {
 
 				String line = "";
 				while ((line = fileReader.readLine()) != null) {
-					line = fileReader.readLine();
 					System.out.println(line);
 				}
 			} catch (IOException e) {

@@ -9,36 +9,50 @@ public class App {
 
 	public static void main(String[] args) {
 		new App().execute();
+		
 
 	}
 
 	private void execute() {
-
-		BufferedReader fileReader = null;
-		try {
-			fileReader = new BufferedReader(new FileReader("Data.txt"));
-			try {
-
-				String line = "";
-				while ((line = fileReader.readLine()) != null) {
-					System.out.println(line);
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			System.out.println("There was an issue here");
-			e.printStackTrace();
-		} finally {
-			try {
-				fileReader.close();
-			} catch (IOException e) {
-				System.out.println("Huston, we have a problem");
-				e.printStackTrace();
-			}
-		}
-
+		Reader reader = new Reader();
+//		User[] users = reader.fileReader();
+		reader.fileReader();
+		System.out.println(reader);
+		
+		
 	}
+//			Gather user input for username and password
+	//		Compare user input to data.txt file for matching strings
+	// 		if user input does not match file reject login attempt
+	//		else if user input matches file successful login attempt
+	
+	
+
+//		BufferedReader fileReader = null;
+//		try {
+//			fileReader = new BufferedReader(new FileReader("Data.txt"));
+//			try {
+//
+//				String line = "";
+//				while ((line = fileReader.readLine()) != null) {
+//					System.out.println(line);
+//				}
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
+//		} catch (FileNotFoundException e) {
+//			System.out.println("There was an issue here");
+//			e.printStackTrace();
+//		} finally {
+//			try {
+//				fileReader.close();
+//			} catch (IOException e) {
+//				System.out.println("Huston, we have a problem");
+//				e.printStackTrace();
+//			}
+//		}
+//
+//	}
 
 //		User u1 = new User("Alpha", "Beta", "Charlie");
 //

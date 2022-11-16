@@ -10,6 +10,13 @@ public class User {
 
 	}
 
+	public User(String username, String password) {
+
+		this.username = username;
+		this.password = password;
+
+	}
+
 	public User(String username, String password, String name) {
 
 		this.username = username;
@@ -44,7 +51,8 @@ public class User {
 
 	public void msg() {
 
-		System.out.println("Your username is " + username + ". " + "Your password is " + password + ". " + "Your name is " + name + ".");
+		System.out.println("Your username is " + username + ". " + "Your password is " + password + ". "
+				+ "Your name is " + name + ".");
 
 	}
 }
